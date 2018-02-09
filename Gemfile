@@ -54,3 +54,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'safe_attributes'
+
+gem 'carrierwave'
+gem 'mini_magick'
