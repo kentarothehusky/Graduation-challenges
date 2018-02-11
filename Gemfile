@@ -57,3 +57,8 @@ gem 'safe_attributes'
 
 gem 'carrierwave'
 gem 'mini_magick'
+
+group :development, :test do
+  gem 'pry-rails'
+  gem 'pry-doc'
+end

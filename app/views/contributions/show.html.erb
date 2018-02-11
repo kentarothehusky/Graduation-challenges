@@ -6,6 +6,11 @@
 </p>
 
 <p>
+  <strong>Category:</strong>
+  <%= @contribution.category %>
+</p>
+
+<p>
   <strong>User name:</strong>
   <%= @contribution.user_name %>
 </p>
@@ -15,15 +20,19 @@
   <%= @contribution.overview %>
 </p>
 
-<p>
-  <strong>Category:</strong>
-  <%= @contribution.category %>
-</p>
 
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @contribution.image %>
+</p>
 <p>
   <strong>Update:</strong>
   <%= @contribution.modified %>
 </p>
+
+
+<p id="notice"><%= notice %></p>
+
 
 <%= link_to 'Edit', edit_contribution_path(@contribution) %> |
 <%= link_to 'Back', contributions_path %>
