@@ -3,15 +3,13 @@
 <h1>Contributions～資料を探す～</h1>
 
 <table>
-  <thead>
-    <tr>
+  <tr>
       <th>投稿者</th>
       <th>タイトル</th>
       <th>概要</th>
       <th>カテゴリ</th>
       <th>最終更新日</th>
-    </tr>
-  </thead>
+  </tr>
 
   <tr>
     <% @contributions.each do |contribution| %>
@@ -20,7 +18,7 @@
       <td><%= contribution.overview %></td>
       <td><%= contribution.modified %></td>
       
-     <td><% if contribution.user.id == current_user.id %></td>
+    <td><% if contribution.user.id == current_user.id %></td>
           <td><%= link_to '閲覧', contribution %></td>
           <td><%= link_to '編集', edit_contribution_path(contribution) %></td>
           <td><%= link_to '削除', contribution, method: :delete, data: { confirm: '本当に削除して良いですか？?' } %></td>
@@ -28,6 +26,6 @@
           <td><%= contribution.title %></td>
           <td><%= link_to '閲覧', contribution_path(contribution.id) %></td>
         <% end %>  
+    <tr>
     <% end %>
-  </tr>
 </table>

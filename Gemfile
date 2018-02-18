@@ -62,3 +62,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry-doc'
 end
+
+group :development do
+  gem 'letter_opener_web'
+end

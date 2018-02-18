@@ -27,7 +27,6 @@ class ContributionsController < ApplicationController
   # POST /contributions.json
   def create
     @contribution = current_user.contributions.build(contribution_params)
-
     respond_to do |format|
       if @contribution.save
         format.html { redirect_to @contribution, notice: '新規投稿が完了しました。' }
@@ -58,7 +57,6 @@ class ContributionsController < ApplicationController
     @contribution.destroy
     respond_to do |format|
       format.html { redirect_to contributions_url, notice: '投稿を削除しました。' }
-      format.json { head :no_content }
     end
   end
 

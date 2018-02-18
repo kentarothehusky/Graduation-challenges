@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= form.label :category %>
-    <%= form.text_area :category, id: :contribution_category %>
+    <%= select :category,:name,Contribution.categories.keys.to_a %>
   </div>
 
   <div class="field">

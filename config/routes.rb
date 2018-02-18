@@ -8,4 +8,10 @@ Rails.application.routes.draw do
   resources :sessions
   resources :favorites
 
+  root  'sessions#new'
+  
+  if Rails.env.development?
+    mount LetterOpenerWeb::Engine, at: "/letter_opener"
+  end
+
 end

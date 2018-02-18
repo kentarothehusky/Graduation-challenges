@@ -18,6 +18,40 @@ ul li{
     display: inline;
  } 
  
-header{
-    margin-right: auto;
+header {
+  font-size: 12px;
+  color: white;
+  width: 100%;
+  background-color: #2c3e50;
+  vertical-align: middle;
+  text-align: center;
+  height: 54px;
 }
+
+header ul {
+  margin: 0 auto;
+  color: white;
+  list-style: none;
+}
+
+container {
+  text-align: center;
+}
+
+jumbotron{
+  background-image: url("assets/images/man-1351317_960_720.png");
+}
+
+
+footer {
+  width: 100%;
+  background-color:#2c3e50;
+  /*padding: 20px 0 10px 0;*/
+  color: white;
+  margin: auto;
+  padding-bottom: 10px;
+  font-size: 18px;
+  position: fixed;
+  bottom: 0;
+}
+
