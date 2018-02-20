@@ -1,21 +1,22 @@
 <h1>favorites～ウォッチリスト～</h1>
 
 <table>
-  <tr>
-    <th>投稿者</th>
-    <th>タイトル</th>
-    <th>概要</th>
-　　<th>カテゴリ</th>
-    <th>更新日</th>
-  </tr>
-
-<% @favorites.each do |favorite| %>
-  <tr>
-    <% favorite.user.id == current_user.id %>
-      <td><%= favorite.contribution.user.name %></td>
-      <td><%= favorite.contribution.title %></td>
-      <td><%= favorite.contribution.overview %></td>
-      <td><%= favorite.contribution.category %></td>
-      <td><%= favorite.contribution.modified %></td>
-  <tr>
+    <tr>
+      <th>投稿者</th>
+      <th>タイトル</th>
+      <th>概要</th>
+  　　<th>カテゴリ</th>
+      <th>更新日</th>
+    </tr>
+  
+  <% @favorites.each do |favorite| %>
+      <tr>
+      <% favorite.user.id == current_user.id %>
+        <th><%= favorite.contribution.user.name %></th>
+        <th><%= favorite.contribution.title %></th>
+        <th><%= favorite.contribution.overview %></th>
+        <th><%= favorite.contribution.category %></th>
+        <th><%= favorite.contribution.modified %></th>
+      </tr>
+  </table>    
 <% end %>

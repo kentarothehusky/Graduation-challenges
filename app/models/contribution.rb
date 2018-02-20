@@ -5,7 +5,7 @@ class Contribution < ApplicationRecord
   has_many :favorite_users, through: :favorites, source: :user
   belongs_to :user
   
-  enum category: {
+  enum category:{
     サービス: 1,
     商品:2,
     イベント: 3,

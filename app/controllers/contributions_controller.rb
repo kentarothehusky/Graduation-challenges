@@ -28,6 +28,7 @@ class ContributionsController < ApplicationController
   def create
     @contribution = current_user.contributions.build(contribution_params)
     respond_to do |format|
+      
       if @contribution.save
         format.html { redirect_to @contribution, notice: '新規投稿が完了しました。' }
         format.json { render :show, status: :created, location: @contribution }
@@ -66,8 +67,8 @@ class ContributionsController < ApplicationController
       @contribution = Contribution.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
+    
     def contribution_params
-      params.require(:contribution).permit(:title, :overview, :category, :update, :file)
+      params.require(:contribution).permit(:title, :overview, :file, :modified, :category)
     end
 end
