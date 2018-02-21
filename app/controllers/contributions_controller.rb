@@ -30,7 +30,7 @@ class ContributionsController < ApplicationController
     respond_to do |format|
       
       if @contribution.save
-        format.html { redirect_to @contribution, notice: '新規投稿が完了しました。' }
+        format.html { redirect_to contributions_path, notice: '新規投稿が完了しました。' }
         format.json { render :show, status: :created, location: @contribution }
       else
         format.html { render :new }

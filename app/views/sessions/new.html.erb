@@ -1,28 +1,28 @@
-<body>
-  <div class="container">
-      <div class="row">
-          <div class="col-md-offset-5 col-md-3">
-            <%= form_with(scope: :session, url: sessions_path) do |f| %>
-              <div class="form-login">
-                <h3>Proposal Stationへようこそ</h3>
-                  <h5>Proposal Statioはあなたのビジネスのスピードを円滑にします。</h5>
-                    <%= f.label :email %>
-                    <%= f.email_field :email %>
-  
-                    <%= f.label :password %>
-                    <%= f.password_field :password %>
-  
-                <div class="wrapper">
-                  <span class="group-btn">
-                    <div class="btn btn-primary btn-md">
-                      <%= f.submit "Log in" %>
-                    </div>  
-                  </span>
-                </div>
-              </div>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="col-md-offset-5 col-md-3">
+        <%= form_with(scope: :session, url: sessions_path) do |f| %>
+          <div class="form-login">
+            <h1>あなたのミッションは資料を作ることですか？</h1>
+              <h4>資料は"作る"ものではなく"買う"時代に。
+              <br>
+              ProposalStationは、提案資料のセカンドマーケットプレイスです。</h4>
+                <%= f.label :email %>
+                <%= f.email_field :email %>
+
+                <%= f.label :password %>
+                <%= f.password_field :password %>
+
+            <div class="wrapper">
+              <span class="group-btn">
+                <div class="btn btn-primary btn-md">
+                  <%= f.submit "Log in" %>
+                </div>  
+              </span>
+            </div>
           </div>
       </div>
+    </div>
   </div>
-  <body>
 <% end %>
 

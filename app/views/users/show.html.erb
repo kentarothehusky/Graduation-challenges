@@ -14,9 +14,7 @@
       <td><%= contribution.title %></td>
       <td><%= contribution.overview %></td>
       <td><%= contribution.modified %></td>
-    </tr>
-    
-    <tr>    
+  
       <% if @user.id == current_user.id %>
           <td><%= link_to '閲覧', contribution %></td>
           <td><%= link_to '編集', edit_contribution_path(contribution) %></td>

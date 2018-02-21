@@ -19,18 +19,18 @@ ul li{
  } 
  
 header {
-  font-size: 12px;
-  color: white;
+  font-size: 16px;
+  /*color: white;*/
   width: 100%;
   background-color: #2c3e50;
   vertical-align: middle;
-  text-align: center;
+  text-align: right;
   height: 54px;
 }
 
 header ul {
   margin: 0 auto;
-  color: white;
+  /*color: white;*/
   list-style: none;
 }
 
@@ -38,9 +38,6 @@ container {
   text-align: center;
 }
 
-jumbotron{
-  background-image: url("assets/images/man-1351317_960_720.png");
-}
 
 
 footer {
