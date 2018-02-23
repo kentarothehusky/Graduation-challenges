@@ -3,15 +3,19 @@ body {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  color:black;
+  margin:0px;
 }
 
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: 1px;
-
+  letter-spacing: 3px;
+  font-weight:bold;
 }
+
+
 
 pre {
   background-color: #eee;
@@ -20,10 +24,10 @@ pre {
 }
 
 a {
-  color: #fff;
+  color: #000;
 
   &:visited {
-    color: #fff;
+    color: #000;
   }
 
   &:hover {
@@ -34,10 +38,12 @@ a {
 
 th {
   padding-bottom: 5px;
+  color:black;
 }
 
 td {
   padding: 0 5px 7px;
+  color:black;
 }
 
 div {
@@ -72,6 +78,10 @@ div {
     background-color: #c00;
     color: #fff;
   }
+  
+  h4 {
+  color: white;
+  }
 
   ul li {
     font-size: 12px;
@@ -81,4 +91,8 @@ div {
 
 label {
   display: block;
+}
+
+introduction {
+  color:white;
 }

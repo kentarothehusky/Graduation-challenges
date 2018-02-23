@@ -1,19 +1,19 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400);
 body {
   background-color:#fff;
   // -webkit-font-smoothing: antialiased;
   font: normal 14px Roboto,arial,sans-serif;
-  
+  height:120%;
+
 }
 
 .container {
     padding: 25px;
     position: relative;
     background-image: url("tetsuya.jpg");
-    background-size: cover;
-    background-position: center 60%;
+    background-size: auto;
+    background-position: center 50%;
     width:full;
-    height:90%;
+    height:120%;
 }
 
 form-login{
@@ -21,20 +21,19 @@ form-login{
 }
 
 
-h1, h4{ 
+.h1{ 
   // border:0 solid #fff; 
   // border-bottom-width:1px;
   // padding-bottom:10px;
   // text-align: center;
-  color:white;
+  color:black;
 }
 
 
-.form-control {
-    border-radius: 10px;
-}
+
+
 
 .wrapper {
-    text-align: center;
+    text-align: auto;
 }
 

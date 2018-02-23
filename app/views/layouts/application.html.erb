@@ -9,32 +9,36 @@
   </head>
   
   <header>
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="#">Navbar</a>
-    </nav>
-    <ul class="nav navbar-nav">
-      <% if logged_in? %>
-        <li><%= link_to_unless_current "提案書を探す", contributions_path %></li>
-        <li><%= link_to "投稿してみる", new_contribution_path%></li>
-        <li><%= link_to_unless_current "ウォッチリスト", favorites_path(current_user.id) %></li>
-        <li><%= link_to_unless_current "マイページ", user_path(current_user.id) %></li>
-        <li><%= link_to_unless_current "ログアウト", session_path(current_user.id), method: :delete %></li>
-      <% else %>
-        <li><%= link_to "Sign up", new_user_path %></li>
-        <li><%= link_to "Login", new_session_path %></li>
-      <% end %>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+
+      </div>
+
+    		<div class="collapse navbar-collapse" id="navbarEexample7">
+          <ul class="nav navbar-nav">
+            <br>
+            <% if logged_in? %>
+              <li><%= link_to_unless_current "提案書を探す", contributions_path %></li>
+              <li><%= link_to "出品する", new_contribution_path%></li>
+              <li><%= link_to_unless_current "ウォッチリスト", favorites_path(current_user.id) %></li>
+              <li><%= link_to_unless_current "マイページ", user_path(current_user.id) %></li>
+              <li><%= link_to_unless_current "ログアウト", session_path(current_user.id), method: :delete %></li>
+            <% else %>
+              <li><%= link_to "会員登録", new_user_path %></li>
+              <li><%= link_to "ログイン", new_session_path %></li>
+            <% end %>
             
-      <!--<% flash.each do |key, value| %>-->
-      <!--  <%= content_tag(:div, value, class: "#{key}") %>-->
-      <!--<% end %>-->
-    </ul>
-  </div>
+          </ul>
+        </div>
+      </div>
+    </nav>          
   </header>
 
   <body>
     <%= yield %>
   </body>
+  
+  <footer>
+    <%= "@2018 ProposalStation" %>
+  </footer>
 </html>

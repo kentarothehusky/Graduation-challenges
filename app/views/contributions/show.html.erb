@@ -1,33 +1,39 @@
-<p id="notice"><%= notice %></p>
+<p id="notice"></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @contribution.title %>
-</p>
+<div class="title_back_edit">
+  <h1>投稿詳細</h1>
+</div>
 
-<p>
-  <strong>Category:</strong>
-  <%= @contribution.category %>
-</p>
+<div class="c_show">
+  <p>
+    <strong>タイトル:</strong>
+    <%= @contribution.title %>
+  </p>
+  
+  <p>
+    <strong>カテゴリ:</strong>
+    <%= @contribution.category %>
+  </p>
+  
+  
+  <p>
+    <strong>概要:</strong>
+    <%= @contribution.overview %>
+  </p>
+  
+  <p>
+    <strong>更新日:</strong>
+    <%= @contribution.modified %>
+  </p>
+  
+  <p class="img">
+    <strong>Image:</strong>
+    <%= image_tag @contribution.file %>
+  </p>
+</div>
 
 
-<p>
-  <strong>Overview:</strong>
-  <%= @contribution.overview %>
-</p>
-
-<p>
-  <strong>modified:</strong>
-  <%= @contribution.modified %>
-</p>
-
-<p>
-  <strong>Image:</strong>
-  <%= image_tag @contribution.file %>
-</p>
-
-
-
+<div class="title_back_edit">
 
 <%= link_to 'Edit', edit_contribution_path(@contribution) %> |
 <%= link_to 'Back', contributions_path %>
@@ -37,3 +43,6 @@
   <% else %>
     <%= link_to 'お気に入りする', favorites_path(contribution_id: @contribution.id), method: :post, class: 'btn btn-primary' %>
   <% end %>
+
+</div>
+  

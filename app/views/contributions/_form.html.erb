@@ -10,35 +10,37 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= form.label :タイトル %>
-    <%= form.text_field :title, id: :contribution_title %>
-  </div>
-
-  <div class="field">
-    <%= form.label :概要 %>
-    <%= form.text_area :overview, id: :contribution_overview %>
-  </div>
-
-  <div class="field">
-    <%= form.label :カテゴリ %>
-    <%= select :contribution, :category, Contribution.categories.keys %>
-  </div>
-
-  <div class="field">
-    <%= form.label :最終更新日 %>
-    <%= form.date_select :modified, id: :contribution_modified %>
-  </div>
   
-  <div class="field">
-    <%= form.label :データファイル %>
-    <%= form.file_field :file, id: :feed_file %>
-    <%= form.hidden_field :file_cache %>
-  </div>
+<body>
+    <div class="field">
+      <%= form.label :タイトル %>
+      <%= form.text_field :title, id: :contribution_title %>
+    </div>
   
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+    <div class="field">
+      <%= form.label :概要 %>
+      <%= form.text_area :overview, id: :contribution_overview %>
+    </div>
   
-<% end %>
+    <div class="field">
+      <%= form.label :カテゴリ %>
+      <%= select :contribution, :category, Contribution.categories.keys %>
+    </div>
+  
+    <div class="field">
+      <%= form.label :最終更新日 %>
+      <%= form.date_select :modified, id: :contribution_modified %>
+    </div>
+    
+    <div class="field">
+      <%= form.label :データファイル %>
+      <%= form.file_field :file, id: :feed_file %>
+      <%= form.hidden_field :file_cache %>
+    </div>
+    
+    <div class="actions">
+      <%= form.submit %>
+    </div>
+    
+    <% end %>
+</body>
