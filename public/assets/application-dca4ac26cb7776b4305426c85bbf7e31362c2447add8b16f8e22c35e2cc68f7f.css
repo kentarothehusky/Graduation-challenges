@@ -1,0 +1,324 @@
+/* line 5, /home/ubuntu/workspace/proposal/app/assets/stylesheets/contributions.scss */
+table {
+  overflow: hidden;
+  margin-left: 50px;
+  border-spacing: 1px;
+  overflow: scroll;
+}
+
+/* line 14, /home/ubuntu/workspace/proposal/app/assets/stylesheets/contributions.scss */
+tr:hover {
+  background-color: #ffa;
+}
+
+/* line 18, /home/ubuntu/workspace/proposal/app/assets/stylesheets/contributions.scss */
+.field img {
+  width: 35%;
+  height: 35%;
+}
+
+/* line 23, /home/ubuntu/workspace/proposal/app/assets/stylesheets/contributions.scss */
+body {
+  color: black;
+}
+
+/* line 27, /home/ubuntu/workspace/proposal/app/assets/stylesheets/contributions.scss */
+form {
+  margin-left: 0px;
+}
+
+/* line 31, /home/ubuntu/workspace/proposal/app/assets/stylesheets/contributions.scss */
+body td a {
+  color: black;
+}
+
+/* line 36, /home/ubuntu/workspace/proposal/app/assets/stylesheets/contributions.scss */
+.c_show {
+  margin-left: 40px;
+}
+
+/* line 40, /home/ubuntu/workspace/proposal/app/assets/stylesheets/contributions.scss */
+.title_back_edit {
+  margin-left: 20px;
+}
+/* line 1, /home/ubuntu/workspace/proposal/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: auto;
+  color: black;
+  margin-bottom: 5em;
+  overflow: scroll;
+}
+
+/* line 12, /home/ubuntu/workspace/proposal/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+/* line 22, /home/ubuntu/workspace/proposal/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 28, /home/ubuntu/workspace/proposal/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #0000FF;
+}
+/* line 31, /home/ubuntu/workspace/proposal/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #F2F2F2;
+}
+/* line 35, /home/ubuntu/workspace/proposal/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #A9E2F3;
+  background-color: #0000FF;
+}
+
+/* line 41, /home/ubuntu/workspace/proposal/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+  color: black;
+}
+
+/* line 46, /home/ubuntu/workspace/proposal/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+  color: black;
+}
+
+/* line 52, /home/ubuntu/workspace/proposal/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 57, /home/ubuntu/workspace/proposal/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 61, /home/ubuntu/workspace/proposal/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 67, /home/ubuntu/workspace/proposal/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 74, /home/ubuntu/workspace/proposal/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 84, /home/ubuntu/workspace/proposal/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h4 {
+  color: white;
+}
+/* line 88, /home/ubuntu/workspace/proposal/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 94, /home/ubuntu/workspace/proposal/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+
+/* line 98, /home/ubuntu/workspace/proposal/app/assets/stylesheets/scaffolds.scss */
+.introduction {
+  color: white;
+}
+
+/* line 102, /home/ubuntu/workspace/proposal/app/assets/stylesheets/scaffolds.scss */
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+/* line 108, /home/ubuntu/workspace/proposal/app/assets/stylesheets/scaffolds.scss */
+footer {
+  bottom: 0;
+  height: 5em;
+  position: absolute;
+}
+/* line 1, /home/ubuntu/workspace/proposal/app/assets/stylesheets/sessions.scss */
+body {
+  background-color: #fff;
+  font: normal 14px Roboto,arial,sans-serif;
+  overflow: scroll;
+}
+
+/* line 9, /home/ubuntu/workspace/proposal/app/assets/stylesheets/sessions.scss */
+.container {
+  padding: 25px;
+  position: relative;
+  background-image: url("tetsuya.jpg");
+  background-size: auto;
+  background-position: center 50%;
+  width: full;
+  height: 120%;
+}
+
+/* line 19, /home/ubuntu/workspace/proposal/app/assets/stylesheets/sessions.scss */
+form-login {
+  color: white;
+}
+
+/* line 24, /home/ubuntu/workspace/proposal/app/assets/stylesheets/sessions.scss */
+.h1 {
+  color: black;
+}
+
+/* line 36, /home/ubuntu/workspace/proposal/app/assets/stylesheets/sessions.scss */
+.wrapper {
+  text-align: auto;
+}
+/* line 5, /home/ubuntu/workspace/proposal/app/assets/stylesheets/users.scss */
+form {
+  color: white;
+}
+
+/* line 10, /home/ubuntu/workspace/proposal/app/assets/stylesheets/users.scss */
+.container {
+  padding: 25px;
+  position: relative;
+  background-image: url("tetsuya.jpg");
+  background-size: cover;
+  background-position: center 60%;
+  width: full;
+  height: 90%;
+}
+
+/* line 21, /home/ubuntu/workspace/proposal/app/assets/stylesheets/users.scss */
+.form_new {
+  color: white;
+}
+
+/* line 27, /home/ubuntu/workspace/proposal/app/assets/stylesheets/users.scss */
+h4 {
+  color: #F2F2F2;
+  text-shadow: 1px 1px 1px #EFF8FB;
+}
+
+/* line 32, /home/ubuntu/workspace/proposal/app/assets/stylesheets/users.scss */
+.h1_user_new {
+  color: white;
+}
+
+/* line 36, /home/ubuntu/workspace/proposal/app/assets/stylesheets/users.scss */
+h1 {
+  color: #F2F2F2;
+  text-shadow: 1px 1px 1px #EFF8FB;
+}
+
+/* line 42, /home/ubuntu/workspace/proposal/app/assets/stylesheets/users.scss */
+h2 {
+  color: #F2F2F2;
+  text-shadow: 1px 1px 1px #EFF8FB;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ 
+
+
+ */
+
+
+ul li{ 	
+    display: inline;
+
+ } 
+ 
+header {
+  font-size: 16px;
+  /*color: white;*/
+  width: 100%;
+  background-color: #2c3e50;
+  vertical-align: middle;
+  text-align: right;
+  height: 54px;
+}
+
+header ul {
+  margin: 0 auto;
+  /*color: white;*/
+  list-style: none;
+  vertical-align: middle;
+
+}
+
+container {
+  text-align: center;
+}
+
+
+footer {
+  width: 100%;
+  background-color:#2c3e50;
+  /*padding: 20px ;*/
+  color: white;
+  margin: auto;
+  /*padding-bottom: 20px;*/
+  font-size: 18px;
+  bottom: 0;
+  height: 30px;
+  font: normal 14px Roboto,arial,sans-serif;
+  text-align: center
+}
+
+ul navbar-text navbar-right{
+  text-align: right;
+  align-items: center;
+
+}
+  
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+
+.btn btn-primary{
+  margin-bottom: 10px  
+}
+
+.field{
+  color: black;
+  margin-left: 30px;
+}
+
+.actions{
+  color: black;
+  margin-left: 30px;
+}
