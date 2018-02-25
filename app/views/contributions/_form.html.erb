@@ -1,15 +1,15 @@
 <%= form_with(model: contribution, local: true) do |form| %>
-  <% if contribution.errors.any? %>
+ <% if @contribution.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(contribution.errors.count, "error") %> prohibited this contribution from being saved:</h2>
-
+      <h2><%= @contribution.errors.count %>件のエラーがあります。</h2>
       <ul>
-      <% contribution.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
+        <% @contribution.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
       </ul>
     </div>
   <% end %>
+
   
 <body>
     <div class="field">

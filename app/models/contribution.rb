@@ -17,4 +17,6 @@ class Contribution < ApplicationRecord
     その他: 9
   }
 
+  validates :title,  presence: true
+  validates :overview, presence: true
 end
