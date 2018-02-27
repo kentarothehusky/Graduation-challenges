@@ -83,3 +83,9 @@ ul navbar-text navbar-right{
   color: black;
   margin-left: 30px;
 }
+
+.search_form_for{
+  float: right;
+  margin-bottom: 2%;
+  margin-right: 1%
+}

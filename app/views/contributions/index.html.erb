@@ -1,7 +1,19 @@
 <p id="notice"></p>
 
 <div class="title_back_edit">  
-  <h1>Contributions～資料を探す～</h1>
+  <h1>投稿提案書一覧</h1>
+</div>
+
+<div class ="search_form_for">
+  <%= search_form_for @search do |f| %>
+    <%= f.label :title_cont, 'タイトル' %>
+    <%= f.text_field :title_cont %>
+    <%= f.submit 'タイトル検索' %>
+    
+    <%= f.label :overview_cont, '概要' %>
+    <%= f.text_field :overview_cont %>
+    <%= f.submit '概要検索' %>
+  <% end %>
 </div>
 
 <table class="table table-hover" border="1" bordercolor="#D8D8D8">
@@ -14,7 +26,7 @@
   </tr>
 
   <tr>
-    <% @contributions.each do |contribution| %>
+    <% @result.each do |contribution| %>
       <td><%= contribution.user.name %></td>
       <td><%= contribution.title %></td>
       <td><%= contribution.overview %></td>

@@ -5,7 +5,15 @@ class ContributionsController < ApplicationController
   # GET /contributions
   # GET /contributions.json
   def index
-    @contributions = Contribution.all
+    # @contributions = Contribution.all
+    
+    @search = Contribution.search(params[:q])
+    @result = @search.result
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @result
+      }
+    end  
   end
 
   # GET /contributions/1
