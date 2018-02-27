@@ -6,11 +6,11 @@
 
 <div class ="search_form_for">
   <%= search_form_for @search do |f| %>
-    <%= f.label :title_cont, 'タイトル' %>
+    <!--<%= f.label :title_cont, 'タイトル' %>-->
     <%= f.text_field :title_cont %>
     <%= f.submit 'タイトル検索' %>
     
-    <%= f.label :overview_cont, '概要' %>
+    <!--<%= f.label :overview_cont, '概要' %>-->
     <%= f.text_field :overview_cont %>
     <%= f.submit '概要検索' %>
   <% end %>
