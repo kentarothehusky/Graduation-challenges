@@ -1,0 +1,15 @@
+ja:
+  activerecord:
+    models:
+      contribution: 投稿
+    attributes:
+      user:
+        id: ID
+        created_at: 登録日時
+        updated_at: 更新日時
+        modified: 作成日
+        email: メールアドレス
+        name: 名前
+        password: パスワード
+        title: タイトル
+        overview: 概要

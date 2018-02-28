@@ -19,4 +19,7 @@ class Contribution < ApplicationRecord
 
   validates :title,  presence: true
   validates :overview, presence: true
+  
 end
+
+  # config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}').to_s]
